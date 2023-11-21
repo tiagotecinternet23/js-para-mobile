@@ -51,3 +51,37 @@ console.log(resultado2);
 console.log( Math.abs(resultado3) );
 
 
+/* Sintaxe Arrow Function */
+const exemplo3 = () => {
+    console.log("Arrow Function!");
+};
+
+exemplo3();
+
+// const saudacao = (cliente) => {
+//     console.log("Olá " + cliente);
+// };
+
+// Omitir os parênteses do parâmetro (SOMENTE QUANDO FOR 1)
+// const saudacao = cliente => {
+//     console.log("Olá " + cliente);
+// }
+
+// Omitir as { } (SOMENTE QUANDO FOR UMA ÚNICA INSTRUÇÃO)
+const saudacao = cliente => console.log("Olá "+cliente);
+
+saudacao("Fulano");
+saudacao("Beltrano");
+
+const calculaMetade = (valor) => {
+    return valor / 2;
+};
+
+let resultadoA = calculaMetade(100);
+let resultadoB = calculaMetade(666);
+
+console.log(resultadoA);
+console.log(resultadoB);
+
+
+
