@@ -99,8 +99,12 @@ console.log("------------------");
 /* Exercícios
 
 1) Monte uma Arrow Function que receba um nome de uma pessoa
-e converta este nome para letras maiúsculas.
+e converta este nome para letras maiúsculas. */
+const converteMaiusculas = nome => nome.toUpperCase();
 
-2) Chame a função 3x (passando nomes diferentes) e exibindo
+/* 2) Chame a função 3x (passando nomes diferentes) e exibindo
 no console os resultados. */
+console.log( converteMaiusculas("Chapolin") );
+console.log( converteMaiusculas("chaves") );
+console.log( converteMaiusculas("KikO") );
 
