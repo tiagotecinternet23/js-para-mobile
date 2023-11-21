@@ -94,5 +94,13 @@ let resultadoB = calculaMetade(666);
 console.log(resultadoA);
 console.log(resultadoB);
 
+console.log("------------------");
 
+/* Exercícios
+
+1) Monte uma Arrow Function que receba um nome de uma pessoa
+e converta este nome para letras maiúsculas.
+
+2) Chame a função 3x (passando nomes diferentes) e exibindo
+no console os resultados. */
 
