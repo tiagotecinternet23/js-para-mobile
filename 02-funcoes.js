@@ -28,14 +28,21 @@ exemplo2();
 /* Exercícios
 1) Crie uma função (qualquer sintaxe) que receba dois valores numéricos, calcule a diferença entre
 eles e retorne o resultado.*/
-function exercicio(valor1, valor2){
+// function exercicio(valor1, valor2){
     /* Versão 1: variável de escopo LOCAL */
     // let resultado = valor1 - valor2;
     // return resultado;
 
     /* Versão 2 */
-    return valor1 - valor2;
-}
+   // return valor1 - valor2;
+// }
+
+// const exercicio = (valor1, valor2) => {
+//     return Math.abs(valor1 - valor2);
+// };
+
+// Arrow function simplificada (sem chaves, return explícito)
+const exercicio = (valor1, valor2) => Math.abs(valor1 - valor2);
 
 /*2) Chame esta função duas vezes passando valores
 diferentes e guardando os resultados em variáveis de escopo global.*/
@@ -73,9 +80,13 @@ const saudacao = cliente => console.log("Olá "+cliente);
 saudacao("Fulano");
 saudacao("Beltrano");
 
-const calculaMetade = (valor) => {
+// Arrow Function padrão com retorno EXPLÍCITO
+const calculaMetadeOriginal = (valor) => {
     return valor / 2;
-};
+}
+
+// Arrow Function com retorno IMPLÍCITO
+const calculaMetade = valor => valor / 2;
 
 let resultadoA = calculaMetade(100);
 let resultadoB = calculaMetade(666);
