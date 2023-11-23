@@ -27,3 +27,10 @@ Como calcular?
 -Opção 2: valor * 0.9               
 
 E mostre no console.  */
+const precosBlackFriday = cursos.map( 
+    curso => curso.preco - curso.preco * 0.1 
+);
+
+console.log(precosBlackFriday);
+
+
