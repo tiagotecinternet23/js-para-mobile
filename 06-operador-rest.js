@@ -9,9 +9,7 @@ const cientistas = ["Tesla", "Einstein", "Newton", "Darwin"];
 const artistas = ["Jon", "Ozzy", "David", "Roger", "Floor", "Neil"];
 
                     // rest
-const classificar = (...parametros) => {
-    return parametros.sort();
-};
+const classificar = (...parametros) =>  parametros.sort();
 
 // Chamada da função
 console.log( classificar(...cientistas) ); // spread
