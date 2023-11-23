@@ -40,3 +40,4 @@ const cursosBlackFriday = cursos.map( curso => {
 } );
 
 console.log(cursosBlackFriday);
+
