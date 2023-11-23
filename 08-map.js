@@ -15,8 +15,15 @@ console.log("-----------");
 console.log(cursos);
 
 // Exemplo 2: gerar um novo array apenas com os nomes dos cursos
-const titulos = cursos.map( (curso) => {
-    return curso.titulo
-} );
-
+const titulos = cursos.map( curso => curso.titulo );
 console.log(titulos);
+
+/* Exercício 
+Use o map para gerar um novo array APENAS com os preços
+calculados com um desconto de 10%.
+
+Como calcular?
+-Opção 1: valor - valor * 0.10
+-Opção 2: valor * 0.9               
+
+E mostre no console.  */
