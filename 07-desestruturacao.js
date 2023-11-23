@@ -33,3 +33,23 @@ console.log(newton);
 
 console.log("-------");
 
+const recursos = [
+    ["Notebook", "TV Led", "Computador Desktop"],
+    texto => texto.toUpperCase()
+];
+
+console.log(recursos); // Array completo
+
+// Destructuring
+const [produtos, converter] = recursos;
+
+// Acessando através da constante que foi gerada pelo destructuring
+console.log(produtos[1]); // TV Led
+
+for(const produto of produtos) {
+    console.log("Produto: "+produto);
+}
+
+console.log( converter("tiago") );
+console.log( converter("gelADEira") );
+console.log( converter(produtos[0]) );
