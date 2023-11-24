@@ -76,4 +76,39 @@ const exercicioV2 = cursos.filter(
 console.log(exercicioV2);
 
 
+console.log("Desafio");
+
+/* Desafio: gerar um novo array somente com os títulos
+dos cursos da categoria Mobile */
+const desafioComEncadeamento = cursos
+                    .filter(curso => curso.categoria == "Mobile")
+                    .map(curso => curso.titulo);
+
+console.log(desafioComEncadeamento);
+
+// Sem encadeamento
+const desafio2 = cursos.filter(curso => curso.categoria == "Mobile");
+console.log(desafio2);
+
+const desafio2Titulos = desafio2.map(curso => curso.titulo);
+console.log(desafio2Titulos);
+
+
+/* Desafio Vitor 
+Cursos/Titulos com preço já com desconto */
+const cursosBlackFriday = cursos
+                            .map( 
+                                curso => {
+                                        return { 
+                                            ...curso, 
+                                            preco: curso.preco - curso.preco * 0.10 
+                                        }
+                                })
+                            .filter(curso => curso.categoria == "Mobile")
+                            .map(curso => ({
+                                titulo: curso.titulo, 
+                                preco: curso.preco
+                            }));
+
+console.log(cursosBlackFriday);
 
