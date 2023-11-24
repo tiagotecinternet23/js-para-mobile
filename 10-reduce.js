@@ -18,14 +18,15 @@ console.log(total);
 // Sem reduce e com for
 let acumuladora1 = 0;
 for( let i = 0; i < valores.length; i++ ){
-    acumuladora1 = acumuladora1 + valores[i];
+    // +=   operador soma e atribui
+    acumuladora1 += valores[i];
 }
 console.log(acumuladora1);
 
 // Sem reduce e com for/of
 let acumuladora2 = 0;
 for( let valor of valores ){
-    acumuladora2 = acumuladora2 + valor;
+    acumuladora2 += valor;
 }
 console.log(acumuladora2);
 
