@@ -1,3 +1,5 @@
+import cursos from "./modulos/cursos.js";
+
 /* filter (filtrar) 
 Passa por elementos de um array (usando uma função callback) e retornar valores de acordo com uma ou mais condições gerando um novo array. */
 
@@ -28,3 +30,30 @@ const resultados = alunos.filter(
 );
 
 console.log(resultados);
+
+console.log("-------------------");
+
+/* Filtrando cursos */
+console.log(cursos);
+
+// Filtrando por cursos da categoria Design
+const cursosDesign = cursos.filter(curso => curso.categoria == "Design");
+console.log(cursosDesign);
+
+// Filtrando por cursos que NÃO SÃO da categoria Design
+const cursosMenosDesign = cursos.filter(
+                                curso => curso.categoria != "Design");
+
+console.log(cursosMenosDesign);                                
+
+
+/* Exercícios filter:
+
+Gere um novo array com os cursos que atendam os seguintes critérios:
+-Categorias Front-End e Mobile
+-Preços acima de 600
+
+Resultados esperados: 
+-JS e React (Front-End, custa 800)
+-React Native (Mobile, custa 1000)
+-Flutter (Mobile, custa 900) */
