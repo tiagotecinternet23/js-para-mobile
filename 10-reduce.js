@@ -8,9 +8,9 @@ matemáticas que geram um único resultado. */
 
 // Exemplo 1
 const valores = [10, 5, 50, 200, 1000];
-const total = valores.reduce( (acumulador, valor) => {
-    return acumulador + valor
-}, 0 );
+const total = valores.reduce( 
+    (acumulador, valor) => acumulador + valor, 0 
+);
 
 console.log(valores);
 console.log(total);
@@ -36,9 +36,9 @@ console.log("------------");
 
 /* Exercício: faça a soma dos preços de todos os
 cursos */
-const totalPrecos = cursos.reduce( (acumulador, curso) => {
-    return acumulador + curso.preco
-}, 0 );
+const totalPrecos = cursos.reduce( 
+    (acumulador, curso) => acumulador + curso.preco, 0 
+);
 
 console.log(totalPrecos);
 
@@ -49,9 +49,7 @@ const desafio = cursos
                         curso => curso.categoria == "Front-End" ||
                                  curso.categoria == "Back-End"
                     )
-                    .reduce( (acumulador, curso) => {
-                        return acumulador + curso.preco
-                    }, 0);
+                    .reduce( (acumulador, curso) => acumulador + curso.preco, 0);
 
 console.log(desafio);                
 
