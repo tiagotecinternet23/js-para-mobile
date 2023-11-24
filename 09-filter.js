@@ -57,3 +57,16 @@ Resultados esperados:
 -JS e React (Front-End, custa 800)
 -React Native (Mobile, custa 1000)
 -Flutter (Mobile, custa 900) */
+
+console.log("Exercícios");
+
+const exercicio = cursos.filter(
+    curso => 
+        (curso.categoria == "Front-End" || curso.categoria == "Mobile")
+        && curso.preco > 600
+);
+
+console.log(exercicio);
+
+
+
