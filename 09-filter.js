@@ -60,13 +60,20 @@ Resultados esperados:
 
 console.log("Exercícios");
 
-const exercicio = cursos.filter(
+const exercicioV1 = cursos.filter(
     curso => 
         (curso.categoria == "Front-End" || curso.categoria == "Mobile")
         && curso.preco > 600
 );
 
-console.log(exercicio);
+console.log(exercicioV1);
+
+const exercicioV2 = cursos.filter(
+    curso => curso.preco > 600 
+        && curso.categoria == "Front-End" || curso.categoria == "Mobile"
+);
+
+console.log(exercicioV2);
 
 
 
