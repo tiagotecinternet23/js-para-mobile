@@ -59,6 +59,6 @@ Percorre os elementos do array e executa algum tipo de transformação, gerando 
 
 Percorre os elementos do array filtrando seus valores de acordo com uma ou mais condições, gerando um novo array de dados.
 
-### reduce
+#### reduce
 
 Percorre os elementos do array realizando operações (soma, multiplicação, concatenação etc), gerando um único resultado.
