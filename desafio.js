@@ -10,7 +10,7 @@ botao.addEventListener("click", async function(){
         const dados = await resposta.json();
         
         if(divUsuarios.innerHTML == ""){
-            for(const usuario of dados){
+            dados.map( usuario => {
                 let secao = document.createElement("section");
                 secao.innerHTML = `
                     <h2>${usuario.name}</h2>
@@ -19,7 +19,7 @@ botao.addEventListener("click", async function(){
                     <hr>
                 `;
                 divUsuarios.appendChild(secao);
-            }
+            } );            
         }
 
     } catch (error) {
