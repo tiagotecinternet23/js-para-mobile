@@ -11,7 +11,7 @@ botao.addEventListener("click", async function(){
         
         if(divUsuarios.innerHTML == ""){
             dados
-                .filter( usuario => usuario.name.startsWith("C") )
+                .filter( ({name}) => name.startsWith("C") )
                 .map( ({name, email, website}) => {
                     let secao = document.createElement("section");
                     secao.innerHTML = `
