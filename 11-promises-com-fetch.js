@@ -5,27 +5,33 @@ carregamento de dados usando fetch/then/catch */
 
 const apiUrl = `https://jsonplaceholder.typicode.com/users/3`;
 
-// Conecte/Acesse...
-fetch(apiUrl)
+function acessaAPI() {
 
-// ... e então capture a resposta da API no formato JSON
-.then(resposta => {
-    
-    /* Se a resposta da requisição não for bem-sucedida
-    (por exemplo, se não houver registros, ou se der erro 
-    no próprio server [500]) */
-    if(!resposta.ok){
-        throw new Error(
-        `Erro na requisição: ${resposta.status} - ${resposta.statusText}`)
-    }
+    // Conecte/Acesse...
+    fetch(apiUrl)
 
-    return resposta.json();
-})
+        // ... e então capture a resposta da API no formato JSON
+        .then(resposta => {
 
-// ... e então capture os dados contidos na resposta
-.then( dados => console.log(dados) )
+            /* Se a resposta da requisição não for bem-sucedida
+            (por exemplo, se não houver registros, ou se der erro 
+            no próprio server [500]) */
+            if (!resposta.ok) {
+                throw new Error(
+                    `Erro na requisição: ${resposta.status} - ${resposta.statusText}`)
+            }
 
-// Em caso de erro (acesso, no json, gerais) capture o erro
-.catch( error => {
-    console.error("Erro na operação: "+error.message)
-})
+            return resposta.json();
+        })
+
+        // ... e então capture os dados contidos na resposta
+        .then(dados => console.log(dados))
+
+        // Em caso de erro (acesso, no json, gerais) capture o erro
+        .catch(error => {
+            console.error("Erro na operação: " + error.message)
+        })
+
+}
+
+acessaAPI();
